@@ -2,6 +2,10 @@
 
 This README should talk about what this Starter does. It will be pulled into the page at [sanity.io/create](https://sanity.io/create), but also should mention how to contribute to the Starter, as well as use it.
 
+## Building your first template?
+
+We have a [guide for building a Starter](https://www.sanity.io/docs/creating-a-1-click-sanity-starter-project) and [documentation](https://www.sanity.io/docs/starter-templates).
+
 * `/assets/` is where your preview images will go
 * `/data/` is where a Sanity dataset export will go if you want to give default data
 * `/template/` is where your site and studio will go
