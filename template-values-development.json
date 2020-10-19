@@ -1,7 +1,7 @@
 {
   "sanity": {
-    "dataset": "netlify-poc",
-    "projectId": "jmhf2rn8",
-    "projectTitle": "Netlify POC"
+    "dataset": "production",
+    "projectId": "YOUR PROJECT ID FOR DEVELOPING THE STARTER",
+    "projectTitle": "TEST PROJECT TITLE"
   }
 }
