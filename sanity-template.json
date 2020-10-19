@@ -1,0 +1,58 @@
+{
+    "version": 2,
+    "title": "YOUR TEMPLATE TITLE",
+    "description": "YOUR TEMPLATE DESCRIPTION",
+    "previewMedia": {
+      "type": "image",
+      "src": "assets/FULL-TEMPLATE-IMAGE.png",
+      "alt": "ALT TEXT FOR THE FULL TEMPLATE PREVIEW IMAGE"
+    },
+    "technologies": [
+      {
+        "id": "netlify",
+        "name": "Netlify",
+        "url": "https://www.netlify.com/"
+      }
+    ],
+    "deployment": {
+      "provider": "netlify",
+      "sites": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "title": "Sanity Studio",
+          "description": "The Sanity Studio is where you edit and structure your content.",
+          "dir": "./studio",
+          "previewMedia": {
+            "type": "image",
+            "src": "assets/STUDIO-IMAGE.png",
+            "alt": "A preview image of the Sanity Studio."
+          },
+          "buildSettings": {
+            "base": "studio",
+            "dir": "dist",
+            "cmd": "npm run build"
+          },
+          "requirements": ["build-hook"]
+        },
+        {
+          "id": "site",
+          "type": "web",
+          "title": "HTML Webpage",
+          "requirements": ["build-hook"],
+          "description": "Handlebars generated html web page",
+          "dir": "./site",
+          "buildSettings": {
+            "base": "site",
+            "dir": "./",
+            "cmd": ""
+          },
+          "previewMedia": {
+            "type": "image",
+            "src": "assets/WEBSITE-PREVIEW-IMAGE.png",
+            "alt": "A preview image of the webpage."
+          }
+        }
+      ]
+    }
+  }
